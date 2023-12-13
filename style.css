@@ -1,0 +1,21 @@
+input{
+    width:70px;
+    height:60px;
+    border-radius: 20px;
+    border:2px solid white;
+    margin-bottom:10px;
+    background-color: gray;
+    color: white;
+    
+}
+
+
+#Display{
+    margin-top:25px;
+    margin-left: 35px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    text-align: end;
+
+}

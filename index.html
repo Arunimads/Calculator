@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <script src="./style/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container  mt-5 h-100 bg-dark rounded-5" style="width:400px ;">
+        <input type="text"  id="Display">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <input type="button" class="btn btn-danger rounded-4" value='c' onclick="Clear()">
+                    <input type="button" value='7' onclick="calc('7')" >
+                    <input type="button" value='4' onclick="calc('4')">
+                    <input type="button" value='1' onclick="calc('1')">
+                    <input type="button" value='00' onclick="calc('00')">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn btn-primary rounded-4" value='←' onclick="back('←')">
+                    <input type="button" value='8' onclick="calc('8')">
+                    <input type="button" value='5' onclick="calc('5')"> 
+                    <input type="button" value='2' onclick="calc('2')">
+                    <input type="button" value='0' onclick="Zero('0')">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn btn-warning rounded-4" value='%' onclick="calc('%')">
+                    <input type="button" value='9' onclick="calc('9')">
+                    <input type="button" value='6' onclick="calc('6')">
+                    <input type="button" value='3' onclick="calc('3')">
+                    <input type="button" value='.' onclick="Dot('.')">
+                </div>
+                
+                <div class="col-3">
+                    <input type="button" class="btn btn-warning rounded-4" value='/' onclick="operator('/')">
+                    <input type="button" class="btn btn-warning rounded-4" value='x' onclick="operator('*')">
+                    <input type="button" class="btn btn-warning rounded-4" value='-' onclick="operator('-')">
+                    <input type="button" class="btn btn-warning rounded-4" value='+' onclick="operator('+')">
+                    <input type="button" class="btn btn-success rounded-4" value='=' onclick="result('=')">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
+
+
+
